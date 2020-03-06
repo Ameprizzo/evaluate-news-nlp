@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>News Article NLP</title>
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <h1>Udacity Evaluate News Articles and NLP Project</h1>
+        </div>
+
+    </header>
+
+    <main>
+
+        <section>
+            <form class="" onsubmit="return Client.handleSubmit(event)">
+                <input id="name" type="text" placeholder="https://..." />
+                <div id="validate"></div>
+                <input class="submit-button" type="submit" value="Analyze" />
+            </form>
+            <section>
+
+                <section>
+                    <h1>Sentiment Analysis Results:</h1><br><br>
+
+
+
+                    <table id="results">
+                        <tr>
+                            <th>Polarity</th>
+                            <th>Subjectivity</th>
+                            <th>Polarity_confidence</th>
+                            <th>Subjectivity_confidence</th>
+                        </tr>
+                        <tr>
+                            <td id="polarity"></td>
+                            <td id="subjectivity"></td>
+                            <td id="polarity_confidence"></td>
+                            <td id="subjectivity_confidence"></td>
+                        </tr>
+                    </table>
+                    <br>
+                </section>
+    </main>
+
+    <footer>
+        <p>&copy; Udacity</p>
+    </footer>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js')
+                .then(function (registration) {
+                    console.log('Registration successful, scope is:', registration.scope);
+                })
+                .catch(function (error) {
+                    console.log('Service worker registration failed, error:', error);
+                });
+        }
+    </script>
+</body>
+
+</html>

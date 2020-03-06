@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "Trebuchet MS",
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    margin: auto;
+
+}
+
+
+main {
+    flex: 2;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+h4 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+p {
+    font-size: 1.6rem;
+    margin: 0.5rem 0;
+}
+
+section {
+    max-width: 800px;
+    margin: 50px auto;
+}
